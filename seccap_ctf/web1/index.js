@@ -1,1 +1,0 @@
-console.log('flag{Th1s_w3bslt3_ls_uS3d_jAva3crIPt}');
