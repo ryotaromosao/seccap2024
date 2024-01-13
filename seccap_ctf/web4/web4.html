@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボタンクリックで遷移</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #clickButton {
+            border: none;
+            /* ボーダーをなくす */
+            padding: 10px 20px;
+            /* オプション: ボタンの内側の余白を追加 */
+            cursor: pointer;
+            background-color: white;
+            /* 背景色を白に設定 */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ボタンを作成 -->
+    <button id="clickButton"></button>
+
+    <script>
+        // ボタンの要素を取得
+        var button = document.getElementById('clickButton');
+
+        // ボタンがクリックされたときの処理
+        button.addEventListener('click', function () {
+            // 同じフォルダにあるclick.htmlに遷移
+            window.location.href = '/web1/click.html';
+        });
+    </script>
+
+</body>
+
+</html>
